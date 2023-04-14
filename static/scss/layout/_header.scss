@@ -1,0 +1,44 @@
+header {
+    color: $color-white;
+    font-size: 18px;
+
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .header__menu {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__menu:nth-child(1) {
+            @include flex;
+            gap: 25px;
+        }
+
+        .header__menu:nth-child(3) {
+            @include flex;
+            gap: 30px;
+        }
+
+        .header__menu__items {
+            &-icon {
+                width: 25px;
+                height: 25px;
+
+                &:first-child {
+                    width: 34px;
+                    height: 24px;
+                }
+
+            }
+        }
+
+        .logo {
+            display: block;
+            width: 159px;
+            height: 40px;
+        }
+    }
+}

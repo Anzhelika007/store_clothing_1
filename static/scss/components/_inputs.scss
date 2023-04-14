@@ -1,0 +1,15 @@
+@mixin input_black {
+    border: 0.5px solid $color-black;
+    height: 50px;
+    padding: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+
+    &::placeholder {
+        text-align: center;
+        line-height: 19px;
+        color: $color-grey-l;
+    }
+}

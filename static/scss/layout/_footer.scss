@@ -1,0 +1,25 @@
+.footer {
+    background-color: $color-grey-s;
+    padding-bottom: 74px;
+
+    &__wrapper {
+        @include flex;
+        justify-content: space-between;
+    }
+
+    &__items-list {
+        @include flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h4 {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__items-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+}

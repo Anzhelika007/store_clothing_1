@@ -1,0 +1,115 @@
+.head {
+
+    &__wrapper {
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 60px);
+    }
+
+    h1 {
+        padding: 20px 0;
+    }
+
+    p {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__text-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    a {
+        display: inline-block;
+        height: 19px;
+        text-align: center;
+
+        &::after {
+            content: '>';
+            display: inline-block;
+            text-align: center;
+            color: $color-white;
+            padding-left: 7px;
+            font-size: 10px;
+            height: 19px;
+        }
+    }
+}
+
+.category {
+    background-color: $color-grey-s;
+    padding: 100px 0;
+
+    &__items {
+        @include flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        .category__card {
+            color: $color-white;
+            text-align: center;
+            width: 274px;
+            height: 450px;
+        }
+
+        .category__card:nth-child(1) {
+            background-image: url('/static/images/gallery/jackets.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .category__card:nth-child(2) {
+            background-image: url('/static/images/gallery/coats.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .category__card:nth-child(3) {
+            background-image: url('/static/images/gallery/fur_coat.jpg');
+            background-repeat: no-repeat;
+        }
+
+        .category__card:nth-child(4) {
+            background-image: url('/static/images/gallery/parka.jpg');
+            background-repeat: no-repeat;
+        }
+
+        h4 {
+            background-color: rgba(224, 190, 162, 0.75);
+            backdrop-filter: blur(3px);
+            margin-top: calc(450px - 40px);
+            line-height: 40px;
+        }
+    }
+}
+
+.alert {
+    background-color: $color-grey-s;
+    text-align: center;
+    padding-bottom: 100px;
+
+    &__wrapper {
+        @include flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 auto;
+        width: 600px;
+    }
+
+    &__form {
+        @include flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-input {
+            @include input_black
+        }
+
+        &-button {
+            @include button
+        }
+    }
+}

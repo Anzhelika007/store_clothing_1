@@ -1,0 +1,21 @@
+@mixin button {
+    background-color: $color-gold-s;
+    border: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 16px 0;
+
+    &:hover {
+        filter: $shadow-btn-hover;
+    }
+
+    &:active {
+        background-color: $color-gold-m;
+    }
+}
